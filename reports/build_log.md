@@ -270,3 +270,12 @@ not overnight trading. Write-up must say this plainly.
   first GitHub run is the 3.11 check). Temporary check folder kept outside the repo.
 - Tests: 45 passed, 2 skipped (not reproducible), 2 xfailed (open gaps).
 - Open: GitHub repository not created and nothing pushed yet.
+
+## 2026-10-21 — Published
+
+Before publishing: project instructions file untracked (`.gitignore`), local paths and private
+references removed from tracked files, the headline-figures file given a neutral name, MIT
+`LICENSE` and CI badge added, and history rebuilt as a single commit authored with a GitHub
+noreply address. Pushed `main` to https://github.com/Siavash1368/offhours-market-structure
+(public). First CI run (Python 3.11, ruff + pytest on fixtures and committed tables, no
+network): success.
