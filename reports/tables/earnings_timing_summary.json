@@ -1,0 +1,9 @@
+{
+ "events_checked": 34521,
+ "amc_events": 17837,
+ "amc_share_contradicting": 0.15434209788641587,
+ "amc_dropped_for_a3": 2753,
+ "bmo_share_contradicting": 0.19377847039079357,
+ "rule": "Drop AMC events with |night t-1->t| > |night t->t+1| from A3; no reclassification; A3 also reported unfiltered (R5).",
+ "table": "reports/tables/earnings_timing_check.csv"
+}

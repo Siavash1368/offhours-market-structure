@@ -1,0 +1,133 @@
+# Published figures from the SEC staff memo "Roundtable on Preparations for 24-Hour Trading
+# Supporting Data", Division of Trading and Markets, dated September 10, 2026 (file name ...090926.pdf),
+# File No. 4-913. https://www.sec.gov/files/2026_TM_Overnight_Trading_Roundtable_Memo_090926.pdf
+# Cached at data/raw/sec/sec_overnight_memo_2026-09-09.pdf. Values are transcribed from the memo; they
+# are the targets, not results of this repo.
+#
+# Memo definitions (pp. 3-4):
+#  - Overnight Session: executions 8:00 pm ET (prior calendar day) to 4:00 am ET.
+#  - Trade date: 8:00 pm prior day to 8:00 pm current day; "average trade date" averages over
+#    trade dates in the month.
+#  - Volume: SIP trade messages (exchange) + FINRA TRF media-eligible reports incl. suppressed
+#    reports, from CAT. All NMS stocks (Tier 1 and Tier 2), all venues (ATS and non-ATS OTC).
+#  - Period for "current" figures: August 2026 (trade dates Aug 3-31, 2026; 21 trade dates).
+#
+# Public weekly ATS data differ: weekly aggregates, ATS-only (no non-ATS OTC), split into Tier 1 and
+# Tier 2, trades assigned to FINRA weeks. The `comparable_as` field says how this repo matches each.
+
+period:
+  month: "2026-08"
+  trade_dates: 21          # NYSE trading days in Aug 2026 (Aug 3 - Aug 31); computed again in code
+
+targets:
+  ats_adv_overnight:
+    value: 111500000
+    unit: "shares per trade date"
+    page: 8
+    table: "Table 1, Overnight / ATS, ADV August 2026"
+    definition: "Average daily overnight-session share volume on all ATSs, all NMS stocks, Aug 2026"
+    comparable_as: "Sum of overnight-venue weekly shares (T1+T2) over weeks starting in Aug 2026 / trade dates in those weeks"
+    tolerance_rel: 0.10
+  venue_adv:
+    page: 8
+    table: "Table 1, Overnight ATS rows, ADV August 2026"
+    unit: "shares per trade date"
+    tolerance_rel: 0.15
+    values:
+      BLUE: 93700000
+      BOSS: 12600000
+      IEOS: 3100000
+      MOON: 2000000
+  ats_advt_overnight:
+    value: 5200000000
+    unit: "dollars per trade date"
+    page: 8
+    table: "Table 1, Overnight / ATS, ADVT August 2026"
+    definition: "Average daily overnight-session dollar volume on ATSs, Aug 2026"
+    comparable_as: "Sum of overnight-venue weekly notional (T1+T2) / trade dates"
+    tolerance_rel: 0.10
+  ats_adv_yoy_growth:
+    value: 3.69
+    unit: "proportional change"
+    page: 8
+    table: "Table 1, Overnight / ATS, ADV Y/Y (+369%)"
+    definition: "Aug 2026 ATS overnight ADV / Aug 2025 ATS overnight ADV - 1"
+    comparable_as: "Same ratio from weekly overnight-venue totals (T1+T2)"
+    tolerance_abs: 0.50
+  overnight_share_of_nms_volume:
+    value: 0.009
+    unit: "fraction"
+    page: 6
+    table: "Takeaway after Figure 1"
+    definition: "Overnight session share volume (ATS + non-ATS) / total NMS share volume, average trade date, Aug 2026"
+    comparable_as: >-
+      Not reproducible: the numerator includes non-ATS overnight volume, which is not public by
+      session. Denominator available from Cboe (see not_reproducible). An ATS-only share of Cboe
+      NMS volume is reported descriptively in a1_summary.json, not reconciled.
+    tolerance_abs: 0.003
+  top10_share_overnight:
+    value: 0.434
+    unit: "fraction"
+    page: 23
+    table: "Table 3 takeaway"
+    definition: "Share of overnight-session share volume in the session's ten most active NMS stocks, average trade date, Aug 2026"
+    comparable_as: "Top-10 symbol share of overnight-venue weekly share volume (T1+T2), averaged over Aug 2026 weeks"
+    tolerance_abs: 0.10
+  top100_share_overnight:
+    value: 0.82
+    unit: "fraction"
+    page: 21
+    table: "Text before Figure 5"
+    definition: "Share of overnight share volume in the top 100 overnight names, Aug 2026 (mean curve)"
+    comparable_as: "Top-100 symbol share of overnight-venue weekly share volume (T1+T2), averaged over Aug 2026 weeks"
+    tolerance_abs: 0.10
+  top10_share_rth:
+    value: 0.103
+    unit: "fraction"
+    page: 23
+    table: "Table 3 takeaway"
+    definition: "Top-10 share of regular-trading-hours share volume, average trade date, Aug 2026"
+    comparable_as: "Not reproducible (see not_reproducible)"
+    tolerance_abs: 0.05
+
+# ---------------------------------------------------------------------------------------------
+# Test statuses (tests/test_reconciliation.py). Tolerances above are fixed and not changed.
+#   pass              within tolerance
+#   explained         outside tolerance; listed under documented_gaps with `verified_by` naming a
+#                     check in reports/tables/checks.json whose status is "pass"
+#                     -> xfail(strict=True), reason starts "EXPLAINED"
+#   open              outside tolerance; listed under open_gaps (investigated, not explained)
+#                     -> xfail(strict=True), reason starts "OPEN GAP" and prints the gap
+#   not_reproducible  listed under not_reproducible -> skipped, reason "NOT REPRODUCIBLE"
+#   anything else outside tolerance -> FAIL
+# Every open gap and not-reproducible target must appear in README.md and in the Limitations
+# section of reports/note/note.md (tests/test_docs.py).
+# ---------------------------------------------------------------------------------------------
+
+# Format: <target>: {reason: "...", verified_by: "<check_id>"}
+documented_gaps: {}
+
+# Format: <target>: "explanation of what was ruled out and what remains"
+open_gaps:
+  ats_adv_overnight: >-
+    Weekly ATS data (T1+T2, four complete Aug 2026 weeks) are below the memo's ATS ADV by a
+    similar proportion for every venue and in dollars. Ruled out by checks: truncated or
+    incomplete pulls (pull_complete_live, pull_complete_cached), missing Tier 2
+    (tier_coverage), partial weeks (week_convention), the missing trade date Aug 31
+    (window_bound). Remaining candidates, not verifiable with public data: Rule 4552 ATS
+    self-reports vs CAT-linked TRF reports (incl. suppressed reports), revisions after
+    publication.
+  ats_advt_overnight: >-
+    Same shortfall as ats_adv_overnight, in dollars: the share and dollar gaps are nearly equal,
+    so it is not a price or tier-mix effect. Same checks and same unverified candidates.
+
+# Format: <target>: "why public data cannot reproduce it"
+not_reproducible:
+  overnight_share_of_nms_volume: >-
+    The memo's numerator is all overnight-session volume, ATS and non-ATS (non-ATS = 33.1M of
+    144.6M shares/day, Table 1). Non-ATS OTC volume is public only weekly and not by session, so
+    the numerator cannot be built. The denominator can (Cboe consolidated NMS volume).
+  top10_share_rth: >-
+    Needs regular-trading-hours share volume by symbol for all NMS stocks. Public daily
+    volume mixes sessions, and prices were downloaded for Tier 1 symbols only, so neither the
+    top-10 set nor its RTH volume can be built.

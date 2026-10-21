@@ -1,0 +1,29 @@
+{
+ "tiers": "NMS Tier 1 + Tier 2 (weeks with both tiers published)",
+ "sample_first_week": "2023-01-02",
+ "sample_last_week": "2026-09-14",
+ "n_weeks": 194,
+ "ovn_adv_first13w": 2561060.435483871,
+ "ovn_adv_last13w": 121452643.6984127,
+ "ovn_share_of_nms_first13w": 0.0002173332389844841,
+ "ovn_share_of_nms_last13w": 0.0068483047036369486,
+ "ovn_dollar_share_of_nms_last13w": 0.005287280351548851,
+ "ats_only_ovn_share_of_nms_recon_month": 0.005892617977840785,
+ "top10_share_last13w": 0.4612374306813368,
+ "top100_share_last13w": 0.8180585635719045,
+ "hhi_last13w": 0.04705458233434699,
+ "etp_share_of_ovn_last13w": 0.4733779776742254,
+ "ovn_symbols_last13w_mean": 5042.615384615385,
+ "ovn_share_of_all_ats_last13w": 0.04843350603451827,
+ "t1_share_of_ovn_shares_full": 0.14657193997909695,
+ "t1_share_of_ovn_dollars_full": 0.6267536264576454,
+ "venue_shares_last_quarter": {
+  "BLUE": 0.8254287616738676,
+  "BOSS": 0.12183245839890333,
+  "IEOS": 0.031031378218228614,
+  "MOON": 0.021707401709000467,
+  "total_shares": 5404708061
+ },
+ "last_quarter": "2026Q3",
+ "nms_volume_source": "Cboe Exchange, Inc., U.S. equities historical market volume"
+}

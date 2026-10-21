@@ -1,0 +1,105 @@
+{
+ "n_earnings_events": 7108,
+ "n_earnings_stocks": 682,
+ "n_baseline_nights": 968153,
+ "dropped_extreme": 119,
+ "dropped_flag_contradicting": 1097,
+ "event_dates": [
+  "2023-01-23",
+  "2026-10-01"
+ ],
+ "tercile_cuts_pp": [
+  0.0,
+  0.002209233997711818
+ ],
+ "b_rn_earnings": 0.01875179471979707,
+ "p_rn_earnings": 0.09651515465453428,
+ "c_rn_x_I_earnings": -0.1884525200005551,
+ "p_rn_x_I_earnings": 0.02624991950728225,
+ "c_rn_x_I_baseline": 0.03651653716912043,
+ "p_rn_x_I_baseline": 0.17313254762234187,
+ "triple_rn_x_I_x_E": -0.22496905716967286,
+ "p_triple": 0.009935882771470747,
+ "wpc": [
+  {
+   "sample": "baseline",
+   "tercile": 0,
+   "wpc_night": 0.22624018694054804,
+   "ci_lo": 0.22140442383029602,
+   "ci_hi": 0.230487500752037,
+   "n_nights": 968153,
+   "n_stocks": 1139,
+   "mean_I": 0.014840676170489156
+  },
+  {
+   "sample": "baseline",
+   "tercile": 1,
+   "wpc_night": 0.21598070006938486,
+   "ci_lo": 0.20754647470057622,
+   "ci_hi": 0.2254237664489294,
+   "n_nights": 317447,
+   "n_stocks": 984,
+   "mean_I": 0.0
+  },
+  {
+   "sample": "baseline",
+   "tercile": 2,
+   "wpc_night": 0.21400462498789172,
+   "ci_lo": 0.21010857704983327,
+   "ci_hi": 0.21781978879684347,
+   "n_nights": 350957,
+   "n_stocks": 1042,
+   "mean_I": 0.0005658545611593625
+  },
+  {
+   "sample": "baseline",
+   "tercile": 3,
+   "wpc_night": 0.24741217892819287,
+   "ci_lo": 0.24064476356791056,
+   "ci_hi": 0.2543618973629903,
+   "n_nights": 299749,
+   "n_stocks": 1066,
+   "mean_I": 0.047271065248814116
+  },
+  {
+   "sample": "earnings",
+   "tercile": 0,
+   "wpc_night": 0.7028437188432951,
+   "ci_lo": 0.6846956099881322,
+   "ci_hi": 0.7207845189895882,
+   "n_nights": 7108,
+   "n_stocks": 682,
+   "mean_I": 0.020281745645780922
+  },
+  {
+   "sample": "earnings",
+   "tercile": 1,
+   "wpc_night": 0.6468713480870933,
+   "ci_lo": 0.619588117460867,
+   "ci_hi": 0.6726567651332878,
+   "n_nights": 2582,
+   "n_stocks": 502,
+   "mean_I": 0.0
+  },
+  {
+   "sample": "earnings",
+   "tercile": 2,
+   "wpc_night": 0.6842782259267118,
+   "ci_lo": 0.6552272910178778,
+   "ci_hi": 0.7127237969765577,
+   "n_nights": 2157,
+   "n_stocks": 485,
+   "mean_I": 0.0005544518484659659
+  },
+  {
+   "sample": "earnings",
+   "tercile": 3,
+   "wpc_night": 0.7719702860132687,
+   "ci_lo": 0.7472397699816636,
+   "ci_hi": 0.7972958262527622,
+   "n_nights": 2369,
+   "n_stocks": 481,
+   "mean_I": 0.06034896387212735
+  }
+ ]
+}

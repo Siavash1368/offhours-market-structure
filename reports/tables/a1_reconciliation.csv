@@ -1,0 +1,12 @@
+target,memo_value,ours,gap,gap_rel,tolerance_rel,tolerance_abs,within_tolerance,note
+ats_adv_overnight,111500000.0,96542867.05,-14957132.950000003,-0.13414469013452918,0.1,,False,"4 complete weeks, 20 trade dates, T1+T2"
+venue_adv_BLUE,93700000.0,81310703.85,-12389296.150000006,-0.1322230112059766,0.15,,True,"4 complete weeks, 20 trade dates, T1+T2"
+venue_adv_BOSS,12600000.0,10731891.2,-1868108.8000000007,-0.14826260317460324,0.15,,True,"4 complete weeks, 20 trade dates, T1+T2"
+venue_adv_IEOS,3100000.0,2760839.35,-339160.6499999999,-0.10940666129032255,0.15,,True,"4 complete weeks, 20 trade dates, T1+T2"
+venue_adv_MOON,2000000.0,1739432.65,-260567.3500000001,-0.13028367500000004,0.15,,True,"4 complete weeks, 20 trade dates, T1+T2"
+ats_advt_overnight,5200000000.0,4517488735.073366,-682511264.9266338,-0.13125216633204498,0.1,,False,"4 complete weeks, 20 trade dates, T1+T2"
+ats_adv_yoy_growth,3.69,4.096782057908716,0.40678205790871624,0.11023904008366293,,0.5,True,"base 2025-08: 4 complete weeks, T1+T2"
+overnight_share_of_nms_volume,0.009,,,,,0.003,False,not reproducible with public data
+top10_share_overnight,0.434,0.41251273796395443,-0.021487262036045562,-0.04950982035955199,,0.1,True,"weekly (not daily) top-10, ATS only, T1+T2"
+top100_share_overnight,0.82,0.8066787992977649,-0.013321200702235081,-0.016245366710042782,,0.1,True,"weekly (not daily) top-100, ATS only, T1+T2"
+top10_share_rth,0.103,,,,,0.05,False,not reproducible with public data

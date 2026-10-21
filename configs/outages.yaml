@@ -1,0 +1,31 @@
+# Known overnight-venue disruptions (robustness check 3). Weeks are FINRA week-start Mondays.
+# Sources are press reports found 2026-10-20; dates should be re-checked against venue notices.
+
+outages:
+  - venue: BLUE
+    weeks: ["2024-08-05"]
+    what: >-
+      Blue Ocean ATS outage in the Sunday Aug 4 to Monday Aug 5, 2024 session during the global
+      selloff; Blue Ocean cancelled all trades executed 1:45-3:06 am ET; Robinhood and Korean
+      brokers suspended overnight trading; Blue Ocean reopened for the Aug 6-7 session.
+    sources:
+      - "https://www.benzinga.com/markets/equities/24/08/40177193/robinhood-suspends-24-hour-trading-on-monday-amid-third-party-issues"
+      - "https://www.koreajoongangdaily.com/business/korean-brokerages-halt-us-market-access-after-platform-crashes/12431745"
+  - venue: BLUE
+    weeks: ["2024-08-12"]
+    what: >-
+      Korean brokerages suspended their US 'daytime' (Korean daytime = US overnight) trading
+      service from Aug 16, 2024. Excluded as the transition week.
+    sources:
+      - "https://v.daum.net/v/20240814180443362"
+
+regimes:
+  - venue: BLUE
+    start: "2024-08-16"
+    end: "2025-11-01"
+    what: >-
+      Korean brokers' US overnight service suspended; gradual reinstatement from November 2025
+      on condition that multiple ATSs are used (Korea Times, 2025-09-25). Affects the level of
+      overnight volume, not data quality; noted in the A1 figure, not excluded.
+    sources:
+      - "https://www.koreatimes.co.kr/amp/business/banking-finance/20250925/korean-brokerages-to-resume-us-daytime-stock-trading-in-november-with-stronger-safeguards"

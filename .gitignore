@@ -1,0 +1,29 @@
+# Private planning files: never commit
+_private/
+
+# Secrets
+.env
+
+# Data (rebuild with: python -m offhours.pipeline --phase data)
+data/*
+!data/README.md
+*.duckdb
+*.duckdb.wal
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local project instructions (kept on disk, not published)
+CLAUDE.md

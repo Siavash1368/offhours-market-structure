@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "offhours"
+version = "0.1.0"
+description = "Independent research on public FINRA data: overnight ATS trading of US NMS stocks and price discovery"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.1",
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "duckdb>=1.0",
+    "pyarrow>=14",
+    "statsmodels>=0.14",
+    "linearmodels>=6.0",
+    "matplotlib>=3.8",
+    "requests>=2.31",
+    "pyyaml>=6.0",
+    "yfinance>=0.2.40",
+    "pypdf>=4.0",
+    "tabulate>=0.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5", "ipykernel"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["data: tests that need the locally built data store (skipped in CI)"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

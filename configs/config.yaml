@@ -1,0 +1,40 @@
+# Study A configuration. Paths are relative to the repo root.
+sample:
+  start_week: "2023-01-02"        # first Monday of 2023; overnight-ATS data exist earlier (see data_audit.md)
+  end_week: null                  # null = latest week FINRA has published for NMS Tier 1 (resolved at run time)
+  placebo_start: "2018-01-01"     # robustness: pre-period earnings events
+  placebo_end: "2020-12-31"
+  price_start: "2017-12-01"       # daily prices needed back to the placebo window
+
+finra_api:
+  url: "https://api.finra.org/data/group/otcMarket/name/weeklySummary"
+  page_limit: 5000                # record-max-limit returned by the API for public access
+  sleep_seconds: 0.5              # pause between calls
+  max_retries: 5
+  tiers: ["T1", "T2"]             # T2 is pulled only for overnight venues and venue totals (reconciliation)
+
+regsho:
+  url_template: "https://cdn.finra.org/equity/regsho/daily/CNMSshvol{date}.txt"
+  start_date: "2022-12-01"        # one month before the panel so lagged regressors exist
+  sleep_seconds: 0.3
+
+prices:
+  source: "yfinance"
+  batch_size: 50
+  sleep_seconds: 2.0
+
+earnings:
+  source: "yfinance"
+  sleep_seconds: 1.5
+  after_close_from: "16:00"       # ET; announcement time >= this on day t is "after close"
+  before_open_until: "09:30"      # ET
+  # Drop after-close events whose returns contradict the flag (|night t-1->t| > |night t->t+1|);
+  # see src/offhours/analysis/earnings_check.py. Robustness R5 re-runs A3 without this filter.
+  drop_contradicting: true
+
+symbols:
+  nasdaq_listed: "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt"
+  other_listed: "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+
+http:
+  user_agent: "offhours-market-structure (independent research on public data; contact via GitHub)"

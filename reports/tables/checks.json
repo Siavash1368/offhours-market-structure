@@ -1,0 +1,802 @@
+{
+ "pull_complete_live": {
+  "status": "pass",
+  "rows_equal_record_total": true,
+  "symbol_sum_equals_venue_total": true,
+  "n_venue_weeks": 40,
+  "detail": [
+   {
+    "week": "2026-08-03",
+    "tier": "T1",
+    "mpid": "BLUE",
+    "rows": 1402,
+    "record_total": 1402,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 1401,
+    "symbol_shares": 68497030,
+    "firm_shares": 68497030,
+    "symbol_notional": 12489892083.81,
+    "firm_notional": 12489892083.81
+   },
+   {
+    "week": "2026-08-03",
+    "tier": "T1",
+    "mpid": "BOSS",
+    "rows": 1005,
+    "record_total": 1005,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 1004,
+    "symbol_shares": 12399026,
+    "firm_shares": 12399026,
+    "symbol_notional": 2176584718.75,
+    "firm_notional": 2176584718.75
+   },
+   {
+    "week": "2026-08-03",
+    "tier": "T1",
+    "mpid": "MOON",
+    "rows": 383,
+    "record_total": 383,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 382,
+    "symbol_shares": 1553519,
+    "firm_shares": 1553519,
+    "symbol_notional": 225917619.76,
+    "firm_notional": 225917619.76
+   },
+   {
+    "week": "2026-08-03",
+    "tier": "T1",
+    "mpid": "IEOS",
+    "rows": 561,
+    "record_total": 561,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 560,
+    "symbol_shares": 2904590,
+    "firm_shares": 2904590,
+    "symbol_notional": 654840978.06,
+    "firm_notional": 654840978.06
+   },
+   {
+    "week": "2026-08-03",
+    "tier": "T2",
+    "mpid": "BLUE",
+    "rows": 3342,
+    "record_total": 3342,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 3341,
+    "symbol_shares": 430884193,
+    "firm_shares": 430884193,
+    "symbol_notional": 7972703179.13,
+    "firm_notional": 7972703179.13
+   },
+   {
+    "week": "2026-08-03",
+    "tier": "T2",
+    "mpid": "BOSS",
+    "rows": 2019,
+    "record_total": 2019,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 2018,
+    "symbol_shares": 46565217,
+    "firm_shares": 46565217,
+    "symbol_notional": 1096747260.73,
+    "firm_notional": 1096747260.73
+   },
+   {
+    "week": "2026-08-03",
+    "tier": "T2",
+    "mpid": "MOON",
+    "rows": 909,
+    "record_total": 909,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 908,
+    "symbol_shares": 7825537,
+    "firm_shares": 7825537,
+    "symbol_notional": 164670185.61,
+    "firm_notional": 164670185.61
+   },
+   {
+    "week": "2026-08-03",
+    "tier": "T2",
+    "mpid": "IEOS",
+    "rows": 683,
+    "record_total": 683,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 682,
+    "symbol_shares": 13335300,
+    "firm_shares": 13335300,
+    "symbol_notional": 354276321.71,
+    "firm_notional": 354276321.71
+   },
+   {
+    "week": "2026-08-10",
+    "tier": "T1",
+    "mpid": "BLUE",
+    "rows": 1396,
+    "record_total": 1396,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 1395,
+    "symbol_shares": 48015504,
+    "firm_shares": 48015504,
+    "symbol_notional": 8446001510.45,
+    "firm_notional": 8446001510.45
+   },
+   {
+    "week": "2026-08-10",
+    "tier": "T1",
+    "mpid": "BOSS",
+    "rows": 966,
+    "record_total": 966,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 965,
+    "symbol_shares": 8596647,
+    "firm_shares": 8596647,
+    "symbol_notional": 1404857503.32,
+    "firm_notional": 1404857503.32
+   },
+   {
+    "week": "2026-08-10",
+    "tier": "T1",
+    "mpid": "MOON",
+    "rows": 351,
+    "record_total": 351,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 350,
+    "symbol_shares": 1273286,
+    "firm_shares": 1273286,
+    "symbol_notional": 143561593.55,
+    "firm_notional": 143561593.55
+   },
+   {
+    "week": "2026-08-10",
+    "tier": "T1",
+    "mpid": "IEOS",
+    "rows": 525,
+    "record_total": 525,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 524,
+    "symbol_shares": 2292757,
+    "firm_shares": 2292757,
+    "symbol_notional": 408002232.68,
+    "firm_notional": 408002232.68
+   },
+   {
+    "week": "2026-08-10",
+    "tier": "T2",
+    "mpid": "BLUE",
+    "rows": 3404,
+    "record_total": 3404,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 3403,
+    "symbol_shares": 332090472,
+    "firm_shares": 332090472,
+    "symbol_notional": 5383270113.64,
+    "firm_notional": 5383270113.64
+   },
+   {
+    "week": "2026-08-10",
+    "tier": "T2",
+    "mpid": "BOSS",
+    "rows": 2127,
+    "record_total": 2127,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 2126,
+    "symbol_shares": 33602202,
+    "firm_shares": 33602202,
+    "symbol_notional": 712326882.69,
+    "firm_notional": 712326882.69
+   },
+   {
+    "week": "2026-08-10",
+    "tier": "T2",
+    "mpid": "MOON",
+    "rows": 935,
+    "record_total": 935,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 934,
+    "symbol_shares": 5338250,
+    "firm_shares": 5338250,
+    "symbol_notional": 90875723.26,
+    "firm_notional": 90875723.26
+   },
+   {
+    "week": "2026-08-10",
+    "tier": "T2",
+    "mpid": "IEOS",
+    "rows": 667,
+    "record_total": 667,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 666,
+    "symbol_shares": 6961700,
+    "firm_shares": 6961700,
+    "symbol_notional": 212196161.64,
+    "firm_notional": 212196161.64
+   },
+   {
+    "week": "2026-08-17",
+    "tier": "T1",
+    "mpid": "BLUE",
+    "rows": 1472,
+    "record_total": 1472,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 1471,
+    "symbol_shares": 74797597,
+    "firm_shares": 74797597,
+    "symbol_notional": 14379289249.95,
+    "firm_notional": 14379289249.95
+   },
+   {
+    "week": "2026-08-17",
+    "tier": "T1",
+    "mpid": "BOSS",
+    "rows": 1037,
+    "record_total": 1037,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 1036,
+    "symbol_shares": 14687445,
+    "firm_shares": 14687445,
+    "symbol_notional": 2444347908.03,
+    "firm_notional": 2444347908.03
+   },
+   {
+    "week": "2026-08-17",
+    "tier": "T1",
+    "mpid": "MOON",
+    "rows": 418,
+    "record_total": 418,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 417,
+    "symbol_shares": 2031874,
+    "firm_shares": 2031874,
+    "symbol_notional": 306845707.06,
+    "firm_notional": 306845707.06
+   },
+   {
+    "week": "2026-08-17",
+    "tier": "T1",
+    "mpid": "IEOS",
+    "rows": 558,
+    "record_total": 558,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 557,
+    "symbol_shares": 4350803,
+    "firm_shares": 4350803,
+    "symbol_notional": 797221737.66,
+    "firm_notional": 797221737.66
+   },
+   {
+    "week": "2026-08-17",
+    "tier": "T2",
+    "mpid": "BLUE",
+    "rows": 3425,
+    "record_total": 3425,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 3424,
+    "symbol_shares": 323751738,
+    "firm_shares": 323751738,
+    "symbol_notional": 8844661639.55,
+    "firm_notional": 8844661639.55
+   },
+   {
+    "week": "2026-08-17",
+    "tier": "T2",
+    "mpid": "BOSS",
+    "rows": 2172,
+    "record_total": 2172,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 2171,
+    "symbol_shares": 52237417,
+    "firm_shares": 52237417,
+    "symbol_notional": 1397923708.8,
+    "firm_notional": 1397923708.8
+   },
+   {
+    "week": "2026-08-17",
+    "tier": "T2",
+    "mpid": "MOON",
+    "rows": 1012,
+    "record_total": 1012,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 1011,
+    "symbol_shares": 9812524,
+    "firm_shares": 9812524,
+    "symbol_notional": 245903201.53,
+    "firm_notional": 245903201.53
+   },
+   {
+    "week": "2026-08-17",
+    "tier": "T2",
+    "mpid": "IEOS",
+    "rows": 790,
+    "record_total": 790,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 789,
+    "symbol_shares": 15211014,
+    "firm_shares": 15211014,
+    "symbol_notional": 431594104.68,
+    "firm_notional": 431594104.68
+   },
+   {
+    "week": "2026-08-24",
+    "tier": "T1",
+    "mpid": "BLUE",
+    "rows": 1397,
+    "record_total": 1397,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 1396,
+    "symbol_shares": 62094190,
+    "firm_shares": 62094190,
+    "symbol_notional": 10351003623.31,
+    "firm_notional": 10351003623.31
+   },
+   {
+    "week": "2026-08-24",
+    "tier": "T1",
+    "mpid": "BOSS",
+    "rows": 978,
+    "record_total": 978,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 977,
+    "symbol_shares": 11904839,
+    "firm_shares": 11904839,
+    "symbol_notional": 1801925486.17,
+    "firm_notional": 1801925486.17
+   },
+   {
+    "week": "2026-08-24",
+    "tier": "T1",
+    "mpid": "MOON",
+    "rows": 397,
+    "record_total": 397,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 396,
+    "symbol_shares": 1387459,
+    "firm_shares": 1387459,
+    "symbol_notional": 217106375.15,
+    "firm_notional": 217106375.15
+   },
+   {
+    "week": "2026-08-24",
+    "tier": "T1",
+    "mpid": "IEOS",
+    "rows": 514,
+    "record_total": 514,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 513,
+    "symbol_shares": 3123646,
+    "firm_shares": 3123646,
+    "symbol_notional": 570370151.95,
+    "firm_notional": 570370151.95
+   },
+   {
+    "week": "2026-08-24",
+    "tier": "T2",
+    "mpid": "BLUE",
+    "rows": 3405,
+    "record_total": 3405,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 3404,
+    "symbol_shares": 286083353,
+    "firm_shares": 286083353,
+    "symbol_notional": 5422179488.88,
+    "firm_notional": 5422179488.88
+   },
+   {
+    "week": "2026-08-24",
+    "tier": "T2",
+    "mpid": "BOSS",
+    "rows": 2071,
+    "record_total": 2071,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 2070,
+    "symbol_shares": 34645031,
+    "firm_shares": 34645031,
+    "symbol_notional": 876980596.23,
+    "firm_notional": 876980596.23
+   },
+   {
+    "week": "2026-08-24",
+    "tier": "T2",
+    "mpid": "MOON",
+    "rows": 945,
+    "record_total": 945,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 944,
+    "symbol_shares": 5566204,
+    "firm_shares": 5566204,
+    "symbol_notional": 123914258.53,
+    "firm_notional": 123914258.53
+   },
+   {
+    "week": "2026-08-24",
+    "tier": "T2",
+    "mpid": "IEOS",
+    "rows": 687,
+    "record_total": 687,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 686,
+    "symbol_shares": 7036977,
+    "firm_shares": 7036977,
+    "symbol_notional": 201783395.2,
+    "firm_notional": 201783395.2
+   },
+   {
+    "week": "2026-08-31",
+    "tier": "T1",
+    "mpid": "BLUE",
+    "rows": 1441,
+    "record_total": 1441,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 1440,
+    "symbol_shares": 45713861,
+    "firm_shares": 45713861,
+    "symbol_notional": 7287106516.19,
+    "firm_notional": 7287106516.19
+   },
+   {
+    "week": "2026-08-31",
+    "tier": "T1",
+    "mpid": "BOSS",
+    "rows": 992,
+    "record_total": 992,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 991,
+    "symbol_shares": 10420158,
+    "firm_shares": 10420158,
+    "symbol_notional": 1614839146.07,
+    "firm_notional": 1614839146.07
+   },
+   {
+    "week": "2026-08-31",
+    "tier": "T1",
+    "mpid": "MOON",
+    "rows": 379,
+    "record_total": 379,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 378,
+    "symbol_shares": 1163744,
+    "firm_shares": 1163744,
+    "symbol_notional": 151801968.06,
+    "firm_notional": 151801968.06
+   },
+   {
+    "week": "2026-08-31",
+    "tier": "T1",
+    "mpid": "IEOS",
+    "rows": 517,
+    "record_total": 517,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 516,
+    "symbol_shares": 2047567,
+    "firm_shares": 2047567,
+    "symbol_notional": 419195716.66,
+    "firm_notional": 419195716.66
+   },
+   {
+    "week": "2026-08-31",
+    "tier": "T2",
+    "mpid": "BLUE",
+    "rows": 3291,
+    "record_total": 3291,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 3290,
+    "symbol_shares": 188929644,
+    "firm_shares": 188929644,
+    "symbol_notional": 2787345793.32,
+    "firm_notional": 2787345793.32
+   },
+   {
+    "week": "2026-08-31",
+    "tier": "T2",
+    "mpid": "BOSS",
+    "rows": 1983,
+    "record_total": 1983,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 1982,
+    "symbol_shares": 32622154,
+    "firm_shares": 32622154,
+    "symbol_notional": 892922291.28,
+    "firm_notional": 892922291.28
+   },
+   {
+    "week": "2026-08-31",
+    "tier": "T2",
+    "mpid": "MOON",
+    "rows": 931,
+    "record_total": 931,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 930,
+    "symbol_shares": 6716091,
+    "firm_shares": 6716091,
+    "symbol_notional": 173805800.71,
+    "firm_notional": 173805800.71
+   },
+   {
+    "week": "2026-08-31",
+    "tier": "T2",
+    "mpid": "IEOS",
+    "rows": 627,
+    "record_total": 627,
+    "types": [
+     "ATS_W_FIRM",
+     "ATS_W_SMBL_FIRM"
+    ],
+    "symbol_rows": 626,
+    "symbol_shares": 8560702,
+    "firm_shares": 8560702,
+    "symbol_notional": 245455480.28,
+    "firm_notional": 245455480.28
+   }
+  ]
+ },
+ "pull_complete_cached": {
+  "status": "pass",
+  "venue_week_tiers": 1082,
+  "sum_mismatches": 0,
+  "files_checked": 1950,
+  "record_total_mismatches": 0,
+  "mismatch_examples": []
+ },
+ "week_convention": {
+  "status": "pass",
+  "month": "2026-08",
+  "trading_days_in_month": 21,
+  "trading_days_in_complete_weeks": 20,
+  "weeks": [
+   {
+    "week": "2026-08-03",
+    "trading_days": 5,
+    "complete_in_month": true,
+    "lastReportedDate": {
+     "T1_BLUE": "2026-08-10",
+     "T1_BOSS": "2026-08-07",
+     "T1_MOON": "2026-08-07",
+     "T1_IEOS": "2026-08-07",
+     "T2_BLUE": "2026-08-07",
+     "T2_BOSS": "2026-08-07",
+     "T2_MOON": "2026-08-07",
+     "T2_IEOS": "2026-08-07"
+    }
+   },
+   {
+    "week": "2026-08-10",
+    "trading_days": 5,
+    "complete_in_month": true,
+    "lastReportedDate": {
+     "T1_BLUE": "2026-08-17",
+     "T1_BOSS": "2026-08-14",
+     "T1_MOON": "2026-08-14",
+     "T1_IEOS": "2026-08-14",
+     "T2_BLUE": "2026-08-14",
+     "T2_BOSS": "2026-08-14",
+     "T2_MOON": "2026-08-14",
+     "T2_IEOS": "2026-08-14"
+    }
+   },
+   {
+    "week": "2026-08-17",
+    "trading_days": 5,
+    "complete_in_month": true,
+    "lastReportedDate": {
+     "T1_BLUE": "2026-09-04",
+     "T1_BOSS": "2026-08-21",
+     "T1_MOON": "2026-08-21",
+     "T1_IEOS": "2026-08-21",
+     "T2_BLUE": "2026-09-04",
+     "T2_BOSS": "2026-08-21",
+     "T2_MOON": "2026-08-21",
+     "T2_IEOS": "2026-08-21"
+    }
+   },
+   {
+    "week": "2026-08-24",
+    "trading_days": 5,
+    "complete_in_month": true,
+    "lastReportedDate": {
+     "T1_BLUE": "2026-09-04",
+     "T1_BOSS": "2026-08-28",
+     "T1_MOON": "2026-08-28",
+     "T1_IEOS": "2026-08-28",
+     "T2_BLUE": "2026-09-04",
+     "T2_BOSS": "2026-08-28",
+     "T2_MOON": "2026-08-28",
+     "T2_IEOS": "2026-08-28"
+    }
+   },
+   {
+    "week": "2026-08-31",
+    "trading_days": 5,
+    "complete_in_month": false,
+    "lastReportedDate": {
+     "T1_BLUE": "2026-09-04",
+     "T1_BOSS": "2026-09-04",
+     "T1_MOON": "2026-09-04",
+     "T1_IEOS": "2026-09-04",
+     "T2_BLUE": "2026-09-04",
+     "T2_BOSS": "2026-09-04",
+     "T2_MOON": "2026-09-04",
+     "T2_IEOS": "2026-09-04"
+    }
+   }
+  ],
+  "convention": "FINRA week = Monday-Friday trade dates. An overnight session is reported for the next trade date (BOATS Form ATS-N Part III Item 21: Sunday-night trades reported by 04:15 Monday), so a week holds the Sunday-night to Thursday-night sessions. lastReportedDate is 'the last time a firm sent an update' (API spec v0.4), so dates after Friday mean later corrections, not later trades."
+ },
+ "tier_coverage": {
+  "status": "pass",
+  "t2_share_of_shares": {
+   "BLUE": 0.8441752998058693,
+   "BOSS": 0.7782871811074641,
+   "MOON": 0.8204547327543841,
+   "IEOS": 0.7705082695231796
+  },
+  "t2_share_all_venues": 0.8343170128590044,
+  "note": "Reconciliation must sum T1 and T2; T1 alone understates overnight shares."
+ },
+ "definitions": {
+  "status": "info",
+  "rows": [
+   {
+    "item": "Data source",
+    "memo": "SIP trade messages (exchanges) + FINRA TRF media-eligible trade reports via CAT, incl. suppressed reports (p. 4)",
+    "ours": "ATS self-reported weekly shares under FINRA Rule 4552 (API spec v0.4: 'shares reported by each ATS')"
+   },
+   {
+    "item": "Sides counted",
+    "memo": "Executed volume, one count per trade report",
+    "ours": "Not documented by FINRA. A double count would put us ~70% above the memo, not 13% below, so one count per trade is the working assumption."
+   },
+   {
+    "item": "Window",
+    "memo": "Executions 8:00 pm-4:00 am ET (p. 3)",
+    "ours": "All volume on overnight-only ATSs; MOON from 7:30 pm, IEOS from 6:00 pm on holiday sessions (Form ATS-N)"
+   },
+   {
+    "item": "Venues",
+    "memo": "Table 1: ATS row = BOATS + Bruce + IBKR Eos + MOON",
+    "ours": "Same four MPIDs: BLUE, BOSS, IEOS, MOON"
+   },
+   {
+    "item": "Securities",
+    "memo": "All NMS stocks",
+    "ours": "NMS Tier 1 + Tier 2"
+   },
+   {
+    "item": "Period",
+    "memo": "Trade dates in Aug 2026 (8 pm prior day to 8 pm), 21 dates",
+    "ours": "Complete FINRA weeks inside Aug 2026 (Aug 3-28), 20 trade dates"
+   },
+   {
+    "item": "Revisions",
+    "memo": "SIP corrections/cancellations reconciled; TRF reports not reversed, cancelled or broken",
+    "ours": "As published; lastUpdateDate recorded per file"
+   }
+  ]
+ },
+ "window_bound": {
+  "status": "pass",
+  "missing_trade_dates": 1,
+  "adv_complete_weeks": 96542867.05,
+  "adv_bound_low": 94766291.67619048,
+  "adv_bound_high": 97507153.4952381,
+  "target": 111500000,
+  "window_can_close_gap": false
+ }
+}

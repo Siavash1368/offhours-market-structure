@@ -1,0 +1,59 @@
+# Overnight-only ATSs in NMS stocks. Their weekly FINRA ATS volume is used as overnight volume.
+# Hours are taken from each venue's most recent Form ATS-N on EDGAR (checked 2026-10-20; cached
+# copies in data/raw/sec/ats_n/). The SEC staff memo (Sept 2026, Table 1 footnotes 5-8, p. 8)
+# lists the same four venues and MPIDs.
+#
+# The original plan named three venues (Blue Ocean, Bruce, MOON). The SEC memo and the FINRA weekly file
+# show a fourth overnight-only ATS, IBKR Eos (MPID IEOS), so it is included. Analyses can drop it
+# with `include: false`.
+
+venues:
+  BLUE:
+    name: "Blue Ocean ATS (BOATS)"
+    operator: "Blue Ocean ATS, LLC"
+    finra_participant_name: "BOATS"
+    matching_hours_et: "20:00-04:00"
+    days: "Sunday evening through Friday morning; no Friday-night session; no session when the TRF is closed the next day"
+    outside_8pm_4am: "None in normal operation. Matching may continue for < 1 minute after 04:00 while resting orders clear."
+    source: "Form ATS-N/UA filed 2026-10-08, Part III Item 4(a); https://www.sec.gov/Archives/edgar/data/1795131/000090266426004092/primary_doc.xml"
+    include: true
+  BOSS:
+    name: "Bruce ATS"
+    operator: "Bruce Markets LLC"
+    finra_participant_name: "BRUCE MARKETS, LLC."
+    matching_hours_et: "20:00-04:00"
+    days: "Overnight sessions; does not operate the day before an exchange holiday"
+    outside_8pm_4am: "None. Orders received outside operating hours are rejected; open orders expire at 04:00."
+    source: "Form ATS-N/UA filed 2026-04-03; https://www.sec.gov/Archives/edgar/data/1767041/000176704126000004/primary_doc.xml"
+    include: true
+  MOON:
+    name: "MOON ATS"
+    operator: "OTC Link LLC (OTC Markets Group)"
+    finra_participant_name: "MOON ATS"
+    matching_hours_et: "19:30-04:00"
+    days: "Sunday to Thursday evenings (ending Friday 04:00); NYSE holiday schedule"
+    outside_8pm_4am: >-
+      Operates from 19:30, so up to 30 minutes per session fall in the SEC memo's Late Extended
+      session (16:00-20:00). Weekly FINRA data cannot split this out, so MOON volume slightly
+      overstates 8 pm-4 am volume. MOON is under 2% of overnight-ATS volume (memo Table 1), so
+      the effect on totals is small.
+    source: "Form ATS-N/UA filed 2026-07-29; https://www.sec.gov/Archives/edgar/data/1491895/000149189526000016/primary_doc.xml"
+    include: true
+  IEOS:
+    name: "IBKR Eos ATS"
+    operator: "Interactive Brokers LLC"
+    finra_participant_name: "IBKR EOS ATS"
+    matching_hours_et: "20:00-03:50"
+    days: "Sunday evening through Friday morning"
+    outside_8pm_4am: >-
+      Sessions that start on a day the NYSE is closed (holidays) trade from 18:00, so holiday
+      evenings include up to 2 hours of 16:00-20:00 volume. Normal sessions end at 03:50.
+    source: "Form ATS-N/MA filed 2026-06-24 and ATS-N/UA filed 2026-06-12; https://www.sec.gov/Archives/edgar/data/922792/000090266426002887/primary_doc.xml"
+    include: true
+
+notes: >-
+  The FINRA weekly file assigns overnight trades to weeks by FINRA trade date. Trades on a
+  Sunday 8 pm-midnight session are reported Monday by 04:15 (BOATS ATS-N, Part III Item 21), so a
+  Sunday-night session falls in the following Monday's week. Thursday night to Friday 04:00 is the
+  last session in a week. The weekly data therefore cover the sessions from Sunday night to Friday
+  morning, which matches the memo's modified trade-date convention (8 pm prior day to 8 pm).
